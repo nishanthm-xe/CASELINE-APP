@@ -1,0 +1,12 @@
+{
+  "name": "Remix CASE LINE",
+  "description": "A comprehensive healthcare SaaS platform for complete medical records, vertical medical timelines, real-time Live API voice conversations with gemini-3.1-flash-live-preview, biopsy and lab reports, emergency blood requests, doctor consent control, and AI health assistance.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
