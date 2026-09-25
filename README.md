@@ -1,35 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# CASE LINE
 
-# Run and deploy your AI Studio app
+AI-powered multilingual patient history-taking and clinical support platform.
 
-This contains everything you need to run your app locally.
+## Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/6c12a342-3865-4107-99fc-0f7b489bc56b
+Deployment coming soon.
+
+## GitHub
+
+https://github.com/nishanthm-xe/CASELINE-APP
+
+## Features
+
+- Multilingual patient interaction
+- Voice-based clinical history taking
+- Gemini-powered speech transcription
+- Adaptive clinical questioning
+- Red-flag detection
+- Body pain location selection
+- Medical document upload
+- OCR-based information extraction
+- Patient clinical summary
+- Doctor dashboard
+- Patient review and verification
+- Medical timeline
+- Emergency/SOS support
+
+## Tech Stack
+
+- React
+- TypeScript
+- Node.js
+- Express
+- Vite
+- Google Gemini API
+- Supabase
+- Three.js
+- Tailwind CSS
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-
-## Server-Side Supabase Configuration
-
-Encounter and mobile timeline synchronization uses Supabase when both server-only variables are configured:
-
-```text
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=your-server-only-service-role-key
-```
-
-Never place `SUPABASE_SERVICE_ROLE_KEY` in React code, `public/`, frontend environment variables, or source control. Apply the additive encounter migration in [supabase-schema.sql](supabase-schema.sql) before enabling these variables. Without them, encounter APIs use the temporary local `caseline-db.json` fallback.
-
-## 3D Model Attribution
-
-The body surface model in `public/models/caseline-human-body.glb` is from [hpfrei/body-anatomy-3d-viewer](https://github.com/hpfrei/body-anatomy-3d-viewer), derived from [Z-Anatomy](https://www.z-anatomy.com/). It is used under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). The model is used here as a body-surface selection tool, with its anatomical meshes grouped into CASE LINE clinical regions.
+```bash
+npm install
+npm run dev
